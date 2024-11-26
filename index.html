@@ -9,12 +9,12 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body class="bg-black text-white flex justify-center">
+<body class="bg-black text-white flex justify-center font-inherit">
 
     <div class="container flex h-screen w-[70%]">
 
         <!-- Sidebar -->
-        <div class="left bg-black flex-none w-[20%] px-4 py-6 border-r border-gray-500 border-opacity-50 sidebar">
+        <div class="left  bg-black flex-none w-[20%] px-4 py-6 border-r border-gray-500 border-opacity-50 sidebar">
             <img class="invert w-10 mb-6" src="svg/main_icon.svg" alt="Logo">
             <ul class="space-y-6">
                 <li class="flex items-center gap-4">
@@ -53,10 +53,27 @@
             <button class="bg-blue-500 hover:bg-blue-400 text-white font-bold py-2 px-4 h-12 mt-6 w-full rounded-3xl">
                 Post
             </button>
+
+            <div class="mt-6 flex items-center fixed bottom-8">
+                <div>
+                    <img class="w-20 rounded-full" src="svg/file.jpg" alt="">
+                </div>
+
+                <div class="ml-2 flex w-[100%] justify-between">
+                    <div class="flex flex-col">
+                        <p class="text-lg max-w-[w-full]  font-bold">Arshit rupani</p>
+                        <p class="text-white text-base text-opacity-[0.4]">@ArshitR15024</p>
+                    </div>
+
+                    <div>---</div>
+                    
+                </div>
+
+            </div>
         </div>
 
         <!-- Main Content -->
-        <div class="middle flex-grow border-r border-gray-500 border-opacity-50">
+        <div class="middle flex-grow  border-r border-gray-500 border-opacity-50">
 
             <div class="flex h-14 border-b border-gray-500 border-opacity-50">
                 <div class="w-[50%] flex flex-col items-center justify-center font-bold relative">
@@ -76,8 +93,8 @@
 
                 <!-- Write -->
                 <div class="w-full border-b mr-2 h-20 border-gray-500 border-opacity-50">
-                    <input class="ml-2 h-9 w-full bg-black placeholder-gray-400 focus:outline-none text-xl"
-                        type="text" placeholder="What is happening!!">
+                    <input class="ml-2 h-9 w-full bg-black placeholder-gray-400 focus:outline-none text-xl" type="text"
+                        placeholder="What is happening!!">
 
                     <p class="ml-2 mt-2 flex text-blue-500 items-center">
                         <img class="w-4 mr-1" src="svg/earth.svg" alt="">
@@ -94,7 +111,8 @@
                         </div>
 
                         <div>
-                            <button class="bg-blue-500 hover:bg-blue-400 text-white font-bold py-1 px-4 h-auto mt-5 w-full rounded-3xl">
+                            <button
+                                class="bg-blue-500 hover:bg-blue-400 text-white font-bold py-1 px-4 h-auto mt-5 w-full rounded-3xl">
                                 Post
                             </button>
                         </div>
@@ -106,10 +124,14 @@
                 <p class="text-customBlue">Show 84 posts</p>
             </div>
 
+            <div>
+
+            </div>
+
         </div>
 
         <!-- Right Sidebar -->
-        <div class="right flex-none w-[26%] p-2 ml-3">
+        <div class="right  w-[26%] p-2 ml-3">
             <div class="w-full flex bg-gray-700 rounded-3xl h-11 items-center p-3">
                 <img class="filter invert-[45%] sepia-[25%] hue-rotate-[180deg] w-[20px] mr-4" src="svg/search.svg"
                     alt="Search Icon">
@@ -119,19 +141,110 @@
 
             <div class="mt-5 p-4 w-full border border-gray-600 rounded-xl border-opacity-75">
                 <p class="text-xl font-bold">Subscribe to Premium</p>
-                <p class="text-sm mt-2">Subscribe to unlock new features and if eligible, receive a share of revenue.</p>
+                <p class="text-sm mt-2">Subscribe to unlock new features and if eligible, receive a share of revenue.
+                </p>
                 <button class="bg-blue-500 hover:bg-blue-400 text-white font-bold py-2 px-4 mt-4 w-fit rounded-3xl">
                     Subscribe
                 </button>
             </div>
 
+            <!-- what happening -->
             <div class="mt-5 p-4 w-full border border-gray-600 rounded-xl border-opacity-75">
                 <p class="text-xl font-bold">What's happening</p>
 
+                <div>
+                    <p class="text-white mt-4 text-sm text-opacity-[0.4]">Politics · Trending</p>
+                    <p class="text-base font-bold">#MumbaiTerrorAttack</p>
+                    <p class="text-white text-sm text-opacity-[0.4]">1489 posts</p>
+                </div>
+                <div>
+                    <p class="text-white mt-4 text-sm text-opacity-[0.4]">Politics · Trending</p>
+                    <p class="text-base font-bold">#MumbaiTerrorAttack</p>
+                    <p class="text-white text-sm text-opacity-[0.4]">1489 posts</p>
+                </div>
+                <div>
+                    <p class="text-white mt-4 text-sm text-opacity-[0.4]">Politics · Trending</p>
+                    <p class="text-base font-bold">#MumbaiTerrorAttack</p>
+                    <p class="text-white text-sm text-opacity-[0.4]">1489 posts</p>
+                </div>
+
+                <div class="text-customBlue mt-5">Show more</div>
             </div>
 
+            <!-- who follow -->
+            <div class="mt-5 p-4 w-full border border-gray-600 rounded-xl border-opacity-75">
+                <p class="text-xl font-bold mb-2">Who to follow</p>
+
+                <div class="mt-6 flex items-center">
+                    <div>
+                        <img class="w-14 rounded-full" src="svg/icon1.jpg" alt="">
+                    </div>
+
+                    <div class="ml-2 flex w-[100%] justify-between">
+                        <div class="flex flex-col">
+                            <p class="text-base font-bold">Mohi</p>
+                            <p class="text-white text-sm text-opacity-[0.4]">@mohi</p>
+                        </div>
+
+                        <div>
+                            <button
+                                class="bg-white flex text-black font-bold py-1 px-4 mt-2 w-fit rounded-3xl">follow</button>
+                        </div>
+                    </div>
+
+
+                </div>
+
+                <div class="mt-6 flex items-center">
+                    <div>
+                        <img class="w-14 rounded-full" src="svg/icon2.jpg" alt="">
+                    </div>
+
+                    <div class="ml-2 flex w-[100%] justify-between">
+                        <div class="flex flex-col">
+                            <p class="text-base max-w-[w-full]  font-bold">Ayan Kumar Mishra</p>
+                            <p class="text-white text-sm text-opacity-[0.4]">@AyanKumarMishr1</p>
+                        </div>
+
+                        <div>
+                            <button
+                                class="bg-white flex text-black font-bold py-1 px-4 mt-2 w-fit rounded-3xl">follow</button>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="mt-6 flex items-center">
+                    <div>
+                        <img class="w-14 rounded-full" src="svg/icon3.jpg" alt="">
+                    </div>
+
+                    <div class="ml-2 flex w-[100%] justify-between">
+                        <div class="flex flex-col">
+                            <p class="text-base max-w-[w-full]  font-bold">Asif Khan</p>
+                            <p class="text-white text-sm text-opacity-[0.4]">@asi_f_khan</p>
+                        </div>
+
+                        <div>
+                            <button
+                                class="bg-white flex text-black font-bold py-1 px-4 mt-2 w-fit rounded-3xl">follow</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-customBlue mt-5">Show more</div>
             </div>
+
+            <div class="text-white text-opacity-[0.4] mt-5 mb-7">
+                <span class="">Terms of Service</span>
+                <span class="ml-2">Privacy Policy</span>
+                <span class="ml-2">Cookie Policy</span>
+                <span class="ml-2">Accessibility</span>
+                <span class="ml-2">More</span>
+                <span class="ml-2">© 2024 X Corp.</span>
+            </div>
+
         </div>
+    </div>
 
     </div>
 </body>

@@ -1,3 +1,22 @@
+.container {
+    height: 100vh;
+    overflow: hidden;
+}
+.left, .right {
+    height: 100vh;
+    overflow-y: auto;
+    position: sticky;
+    top: 0;
+}
+.middle {
+    height: 100vh;
+    overflow-y: auto;
+}
+
+.right::-webkit-scrollbar,.left::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Edge */
+}
+
 @media(min-width:1000px){
     .container{
         width: 80%;
