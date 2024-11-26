@@ -8,68 +8,58 @@
     <link rel="stylesheet" href="src/output.css">
 </head>
 
-<body>
-    <div class="flex justify-center m-auto bg-black">
-        <div class="bg-black w-[15%] mt-2 gap-3">
-
-            <img class="invert w-10 mb-6" src="svg/icon.svg" alt="">
-
-            <ul class="mt-3">
+<body class="bg-black flex text-white w-[80%] m-auto items-center justify-center">
+    <div class="flex h-screen w-fit ">
+        <!-- Sidebar -->
+        <div class="bg-black w-[17%] fixed h-full px-4 py-6">
+            <img class="invert w-10 mb-6" src="svg/icon.svg" alt="Logo">
+            <ul class="space-y-6">
                 <li class="flex items-center gap-4">
-                    <img class="invert w-6 " src="svg/home.svg" alt="">
-                    <p class="text-[24px] text-white">Home</p>
+                    <img class="invert w-6" src="svg/home.svg" alt="">
+                    <p class="text-[24px]">Home</p>
+                </li>
+                <li class="flex items-center gap-4">
+                    <img class="invert w-6" src="svg/search.svg" alt="">
+                    <p class="text-[24px]">Explore</p>
+                </li>
+                <li class="flex items-center gap-4">
+                    <img class="invert w-6" src="svg/notification.svg" alt="">
+                    <p class="text-[24px]">Notifications</p>
+                </li>
+                <li class="flex items-center gap-4">
+                    <img class="invert w-6" src="svg/msg.svg" alt="">
+                    <p class="text-[24px]">Message</p>
+                </li>
+                <li class="flex items-center gap-4">
+                    <img class="invert w-6" src="svg/grok.svg" alt="">
+                    <p class="text-[24px]">Grok</p>
+                </li>
+                <li class="flex items-center gap-4">
+                    <img class="invert w-6" src="svg/communicate.svg" alt="">
+                    <p class="text-[24px]">Communities</p>
+                </li>
+                <li class="flex items-center gap-4">
+                    <img class="invert w-6" src="svg/profile.svg" alt="">
+                    <p class="text-[24px]">Profile</p>
+                </li>
+                <li class="flex items-center gap-4">
+                    <img class="invert w-6" src="svg/more.svg" alt="">
+                    <p class="text-[24px]">More</p>
                 </li>
             </ul>
-
-            <ul class="mt-3">
-                <li class="flex items-center gap-4">
-                    <img class="invert w-6  " src="svg/search.svg" alt="">
-                    <p class="text-[24px] text-white">explore</p>
-                </li>
-            </ul>
-            <ul class="mt-3">
-                <li class="flex items-center gap-4">
-                    <img class="invert w-6  " src="svg/notification.svg" alt="">
-                    <p class="text-[24px] text-white">Notifications</p>
-                </li>
-            </ul>
-            <ul class="mt-3">
-                <li class="flex items-center gap-4">
-                    <img class="invert w-6  " src="svg/msg.svg" alt="">
-                    <p class="text-[24px] text-white">Message</p>
-                </li>
-            </ul>
-            <ul class="mt-3">
-                <li class="flex items-center gap-4">
-                    <img class="invert w-6  " src="svg/grok.svg" alt="">
-                    <p class="text-[24px] text-white">Grok</p>
-                </li>
-            </ul>
-            <ul class="mt-3">
-                <li class="flex items-center gap-4">
-                    <img class="invert w-6  " src="svg/communicate.svg" alt="">
-                    <p class="text-[24px] text-white">Communities</p>
-                </li>
-            </ul>
-            <ul class="mt-3">
-                <li class="flex items-center gap-4">
-                    <img class="invert w-6  " src="svg/profile.svg" alt="">
-                    <p class="text-[24px] text-white">Profile</p>
-                </li>
-            </ul>
-            <ul class="mt-3">
-                <li class="flex items-center gap-4">
-                    <img class="invert w-6  " src="svg/more.svg" alt="">
-                    <p class="text-[24px] text-white">More</p>
-                </li>
-            </ul>
+            <button
+                class="bg-customBlue hover:bg-[rgb(26,140,216)] text-white font-bold py-2 px-4 h-12 mt-6 w-full rounded-3xl">Post</button>
         </div>
 
-        <div class="bg-blue-600 w-[40%]">
+        <!-- Main Content -->
+        <div class=" w-[50%] ml-[23%] bg-blue-600 p-6">
+            <h1 class="text-2xl mb-4">Main Content</h1>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae nesciunt nobis modi.</p>
         </div>
 
-        <div class="bg-yellow-600 w-[15%]">
+        <!-- Right Sidebar -->
+        <div class=" bg-yellow-600 w-fit">
+            <h1 class="text-2xl mb-4">Right Sidebar</h1>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae nesciunt nobis modi.</p>
         </div>
     </div>
