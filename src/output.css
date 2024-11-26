@@ -655,14 +655,14 @@ video {
   background-color: rgb(37 99 235 / var(--tw-bg-opacity, 1));
 }
 
-.bg-yellow-600 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(202 138 4 / var(--tw-bg-opacity, 1));
-}
-
 .bg-customBlue {
   --tw-bg-opacity: 1;
   background-color: rgb(29 155 240 / var(--tw-bg-opacity, 1));
+}
+
+.bg-yellow-600 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(202 138 4 / var(--tw-bg-opacity, 1));
 }
 
 .p-6 {
@@ -719,29 +719,6 @@ video {
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
-}
-
-.hover\:bg-blue-600:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgb(37 99 235 / var(--tw-bg-opacity, 1));
-}
-
-.hover\:bg-\[rgb\(\)\]:hover {
-  background-color: rgb();
-}
-
-.hover\:bg-\[rgb\(26\2c \)\]:hover {
-  background-color: rgb(26,);
-}
-
-.hover\:bg-\[rgb\(26\2c 38\2c 240\)\]:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgb(26 38 240 / var(--tw-bg-opacity, 1));
-}
-
-.hover\:bg-\[rgb\(26\2c 38\2c 216\)\]:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgb(26 38 216 / var(--tw-bg-opacity, 1));
 }
 
 .hover\:bg-\[rgb\(26\2c 140\2c 216\)\]:hover {
