@@ -8,11 +8,13 @@
     <link rel="stylesheet" href="src/output.css">
 </head>
 
-<body class="bg-black flex text-white w-[80%] m-auto items-center justify-center">
-    <div class="flex h-screen w-fit ">
+<body class="bg-black text-white flex justify-center">
+
+    <div class="flex h-screen w-[70%]">
+        
         <!-- Sidebar -->
-        <div class="bg-black w-[17%] fixed h-full px-4 py-6">
-            <img class="invert w-10 mb-6" src="svg/icon.svg" alt="Logo">
+        <div class="bg-black flex-none w-[20%] px-4 py-6 border-r border-gray-500 border-opacity-50">
+            <img class="invert w-10 mb-6" src="svg/main_icon.svg" alt="Logo">
             <ul class="space-y-6">
                 <li class="flex items-center gap-4">
                     <img class="invert w-6" src="svg/home.svg" alt="">
@@ -47,21 +49,73 @@
                     <p class="text-[24px]">More</p>
                 </li>
             </ul>
-            <button
-                class="bg-customBlue hover:bg-[rgb(26,140,216)] text-white font-bold py-2 px-4 h-12 mt-6 w-full rounded-3xl">Post</button>
+            <button class="bg-customBlue hover:bg-[rgb(26,140,216)] text-white font-bold py-2 px-4 h-12 mt-6 w-full rounded-3xl">Post</button>
         </div>
 
         <!-- Main Content -->
-        <div class=" w-[50%] ml-[23%] bg-blue-600 p-6">
-            <h1 class="text-2xl mb-4">Main Content</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae nesciunt nobis modi.</p>
+        <div class="flex-grow border-r border-gray-500 border-opacity-50">
+
+            <div class="flex h-14 border-b border-gray-500 border-opacity-50">
+                <div class="w-[50%] flex flex-col items-center justify-center font-bold relative">
+                    <p class="text-white">For you</p>
+                    <div class="absolute bottom-0 h-1 bg-customBlue w-14 rounded-3xl"></div>
+                </div>
+
+                <div class="w-[50%] flex items-center justify-center font-bold relative">
+                    <p class="text-gray-400">Following</p>
+                </div>
+            </div>
+
+            <div class="h-36 flex p-3 border-b border-gray-500 border-opacity-50">
+                <div>
+                    <img class="w-10 invert" src="svg/profile.svg" alt="">
+                </div>
+
+                <!-- write -->
+                <div class="w-full border-b h-20 border-gray-500 border-opacity-50">
+                    <input class="ml-2 h-9 w-full bg-black placeholder-gray-400 focus:outline-none text-xl" type="text" placeholder="What is happening!!">
+
+                    <p class="ml-2 mt-2 flex text-customBlue items-center">
+                        <img class="w-4 mr-1" src="svg/earth.svg" alt="">
+                        Everyone can reply
+                    </p>
+
+                    <div class="p-1 flex gap-4">
+                        <img class="w-5 mt-5" src="svg/img.svg" alt="">
+                        <img class="w-5 mt-5" src="svg/gif.svg" alt="">
+                        <img class="w-5 mt-5" src="svg/list.svg" alt="">
+                        <img class="w-5 mt-5" src="svg/emoji.svg" alt="">
+                    </div>
+                </div>
+
+                <div class="w-auto h-auto">
+                    <div>
+                    </div>
+                </div>
+            </div>
+            
         </div>
+        
 
         <!-- Right Sidebar -->
-        <div class=" bg-yellow-600 w-fit">
-            <h1 class="text-2xl mb-4">Right Sidebar</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae nesciunt nobis modi.</p>
+        <div class="flex-none w-[26%] p-2 ml-3">
+            <div class="w-full flex bg-gray-700 rounded-3xl h-11 items-center p-3">
+                <!-- Icon -->
+                <img class="filter invert-[45%] sepia-[25%] hue-rotate-[180deg] w-[20px] mr-4" src="svg/search.svg" alt="Search Icon">
+                <!-- Input -->
+                <input
+                    class="bg-gray-700 rounded-lg w-full text-white placeholder-gray-400 focus:outline-none"
+                    type="text" name="search" placeholder="Search">
+            </div>
+
+            <div class="mt-5 p-4 w-full border border-gray-600 rounded-xl border-opacity-75">
+                <p class="text-xl font-bold">Subscribe to Premium</p>
+                <p class="text-sm mt-2">Subscribe to unlock new features and if eligible, receive a share of revenue.</p>
+                <button class="bg-customBlue hover:bg-[rgb(26,140,216)] text-white font-bold py-2 px-4 mt-4 w-fit rounded-3xl">Subscribe</button>
+            </div>
         </div>
+
+        
     </div>
 </body>
 
