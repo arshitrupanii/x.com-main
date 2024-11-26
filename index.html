@@ -6,14 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>x.com</title>
     <link rel="stylesheet" href="src/output.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body class="bg-black text-white flex justify-center">
 
-    <div class="flex h-screen w-[70%]">
+    <div class="container flex h-screen w-[70%]">
 
         <!-- Sidebar -->
-        <div class="bg-black flex-none w-[20%] px-4 py-6 border-r border-gray-500 border-opacity-50">
+        <div class="left bg-black flex-none w-[20%] px-4 py-6 border-r border-gray-500 border-opacity-50 sidebar">
             <img class="invert w-10 mb-6" src="svg/main_icon.svg" alt="Logo">
             <ul class="space-y-6">
                 <li class="flex items-center gap-4">
@@ -55,7 +56,7 @@
         </div>
 
         <!-- Main Content -->
-        <div class="flex-grow border-r border-gray-500 border-opacity-50">
+        <div class="middle flex-grow border-r border-gray-500 border-opacity-50">
 
             <div class="flex h-14 border-b border-gray-500 border-opacity-50">
                 <div class="w-[50%] flex flex-col items-center justify-center font-bold relative">
@@ -108,7 +109,7 @@
         </div>
 
         <!-- Right Sidebar -->
-        <div class="flex-none w-[26%] p-2 ml-3">
+        <div class="right flex-none w-[26%] p-2 ml-3">
             <div class="w-full flex bg-gray-700 rounded-3xl h-11 items-center p-3">
                 <img class="filter invert-[45%] sepia-[25%] hue-rotate-[180deg] w-[20px] mr-4" src="svg/search.svg"
                     alt="Search Icon">
@@ -122,6 +123,13 @@
                 <button class="bg-blue-500 hover:bg-blue-400 text-white font-bold py-2 px-4 mt-4 w-fit rounded-3xl">
                     Subscribe
                 </button>
+            </div>
+
+            <div class="mt-5 p-4 w-full border border-gray-600 rounded-xl border-opacity-75">
+                <p class="text-xl font-bold">What's happening</p>
+
+            </div>
+
             </div>
         </div>
 
