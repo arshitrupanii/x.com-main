@@ -13,17 +13,17 @@
     overflow-y: auto;
 }
 
-.right::-webkit-scrollbar,.left::-webkit-scrollbar {
+.right::-webkit-scrollbar,.left::-webkit-scrollbar,.middle::-webkit-scrollbar {
     display: none; /* Chrome, Safari, Edge */
 }
 
 @media(min-width:1000px){
     .container{
-        width: 80%;
+        width: 75%;
     }
 
     .left{
-        width: 25%;
+        width: 23%;
     }
 }
 
@@ -33,6 +33,6 @@
     }
 
     .left{
-        width: 25%;
+        width: 23%;
     }
 }
