@@ -8,6 +8,7 @@
     position: sticky;
     top: 0;
 }
+
 .middle {
     height: 100vh;
     overflow-y: auto;
@@ -19,20 +20,24 @@
 
 @media(min-width:1000px){
     .container{
-        width: 75%;
+        width: 85%;
     }
 
     .left{
         width: 23%;
+    }
+
+    .middle{
+        width:min-content;
     }
 }
 
 @media(min-width:1650px){
     .container{
-        width: 70%;
+        width: 75%;
     }
 
     .left{
-        width: 23%;
+        width: 22%;
     }
 }
