@@ -1,3 +1,7 @@
+.middle::-webkit-scrollbar , .left::-webkit-scrollbar,.right::-webkit-scrollbar { /* Chrome, Safari */
+  display: none;
+}
+
 .container {
     height: 100vh;
     overflow: hidden;
